@@ -12,7 +12,10 @@
   "dependencies": {
     "@react-navigation/native": "^6.1.8",
     "@react-navigation/stack": "^6.3.18",
+    "@testing-library/jest-native": "^5.4.3",
+    "@testing-library/react-native": "^12.3.0",
     "axios": "^1.5.1",
+    "jest-react-native": "^18.0.0",
     "json-server": "^0.17.4",
     "lottie-react-native": "^6.3.1",
     "react": "18.2.0",

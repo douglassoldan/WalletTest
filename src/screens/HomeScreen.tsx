@@ -73,7 +73,7 @@ const HomeScreen: React.FC<HomeScreenProps> = ({navigation}) => {
         useNativeDriver: false,
       }),
     ]).start(() => {
-      // 6. Navegação para a rota desejada
+      //@ts-ignore
       navigation.navigate(route);
     });
   };
