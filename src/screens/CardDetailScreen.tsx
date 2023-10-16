@@ -4,11 +4,11 @@ import CardComponent from '../components/CardComponent';
 
 //@ts-ignore
 const CardDetailScreen: React.FC = ({route}) => {
-  const card = route.params.card;
+  const {card, cardIndex} = route.params;
 
   return (
     <View style={styles.container}>
-      <CardComponent {...card} cardIndex={0} />
+      <CardComponent {...card} cardIndex={cardIndex} />
     </View>
   );
 };
@@ -19,6 +19,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#142995',
+    padding: 20,
   },
 });
 

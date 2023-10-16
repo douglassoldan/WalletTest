@@ -48,6 +48,7 @@ const styles = StyleSheet.create({
     padding: 20,
     borderRadius: 8,
     marginBottom: 20,
+    width: '100%',
   },
   cardType: {
     fontSize: 20,

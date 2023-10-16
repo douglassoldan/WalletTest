@@ -19,8 +19,8 @@ const CardListScreen: React.FC<any> = ({navigation}) => {
     fetchCards();
   }, []);
 
-  const handleCardClick = (card: any) => {
-    navigation.navigate('CardDetail', {card});
+  const handleCardClick = (card: any, index: number) => {
+    navigation.navigate('CardDetail', {card, cardIndex: index});
   };
 
   return (
@@ -36,7 +36,7 @@ const CardListScreen: React.FC<any> = ({navigation}) => {
               //@ts-ignore
               {...card}
               cardIndex={index}
-              onClick={() => handleCardClick(card)}
+              onClick={() => handleCardClick(card, index)}
             />
           </View>
         ))}
